@@ -23,8 +23,7 @@ pwdInput.addEventListener("keydown", (e) => {
 });
 
 // FIXED NAME ASSIGNMENTS
-const nameAssignments = ["parth", "parth", "aarav", "shravan", "shravan", "parth", "aarav", "shravan", "aarav", "sachit", "parth", "parth", "sachit", "parth", "parth", "shravan", "aarav"];
-
+const nameAssignments = ["parth", "parth", "aarav", "shravan", "shravan @sachit", "parth", "aarav", "shravan", "aarav", "sachit", "parth", "parth", "sachit", "parth", "parth", "shravan @sachit @parth", "aarav"];
 // BANNERS DATA
 const phrases = [
   "tinder bakchodi",
