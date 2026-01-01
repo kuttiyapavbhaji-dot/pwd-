@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bakchodi Archives</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PASSWORD OVERLAY -->
+  <div id="lockscreen">
+    <div class="lock-card">
+      <h1>Bakchodi Archives</h1>
+      <p>Enter password to enter the server.</p>
+      <input
+        type="password"
+        id="pwdInput"
+        placeholder="Password"
+        autocomplete="off"
+      />
+      <button id="pwdBtn">Enter</button>
+      <p id="pwdError" class="error"></p>
+      <small>Hint: 3 letters, all lowercase.</small>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div class="app" id="app" aria-hidden="true">
+    <aside class="sidebar">
+      <div class="server-name">BAKCHODI HQ</div>
+      <nav class="channel-list">
+        <div class="channel-title">TEXT CHANNELS</div>
+        <div class="channel active"># general-bc</div>
+        <div class="channel"># tinder-lore</div>
+        <div class="channel"># upsc-gym</div>
+        <div class="channel"># cursed-memes</div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="top-title"># general-bc</div>
+        <div class="top-subtitle">College lore, retro minimal edition.</div>
+      </header>
+
+      <section class="banner-list" id="bannerList">
+        <!-- JS will inject banners here -->
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
