@@ -22,13 +22,8 @@ pwdInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") unlockIfValid();
 });
 
-// RANDOM NAME PICKER
-const people = ["sachit", "shravan", "parth", "aarav"];
-
-function getRandomPerson() {
-  const index = Math.floor(Math.random() * people.length);
-  return people[index];
-}
+// FIXED NAME ASSIGNMENTS
+const nameAssignments = ["parth", "parth", "aarav", "shravan", "shravan", "parth", "aarav", "shravan", "aarav", "sachit", "parth", "parth", "sachit", "parth", "parth", "shravan", "aarav"];
 
 // BANNERS DATA
 const phrases = [
@@ -54,7 +49,7 @@ const phrases = [
 const bannerList = document.getElementById("bannerList");
 
 function renderBanners() {
-  phrases.forEach((text) => {
+  phrases.forEach((text, index) => {
     const wrapper = document.createElement("article");
     wrapper.className = "banner";
 
@@ -67,7 +62,7 @@ function renderBanners() {
 
     const note = document.createElement("div");
     note.className = "banner-note";
-    note.innerHTML = `assigned to <span class="banner-tag">@${getRandomPerson()}</span>`;
+    note.innerHTML = `assigned to <span class="banner-tag">@${nameAssignments[index]}</span>`;
 
     left.appendChild(title);
     left.appendChild(note);
